@@ -1,7 +1,7 @@
 // TODO: add and export your own actions
 import cities from '../cities';
 
-const setCities = () => {
+export const setCities = () => {
   // TODO: Api call! For now, simulate a DB
   return {
     type: 'SET_CITIES',
@@ -9,4 +9,10 @@ const setCities = () => {
   };
 };
 
-export default setCities;
+export const setActiveCity = (city) => {
+  return {
+    type: 'SET_ACTIVE_CITY',
+    payload: city
+  };
+};
+

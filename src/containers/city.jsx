@@ -19,4 +19,4 @@ const mapDispatchToProps = (dispatch) => {
       dispatch
   );
 };
-export default connect(mapDispatchToProps)(City);
+export default connect(null, mapDispatchToProps)(City);
